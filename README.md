@@ -1,6 +1,6 @@
 # vaimuaare.github.io
 
-# Vaimuaare OÜ hompegae
+# Vaimuaare OÜ homepage
 
 This repository hosts the source code for the official website of Vaimuaare OÜ.
 
