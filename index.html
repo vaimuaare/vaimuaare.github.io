@@ -1,262 +1,149 @@
 ﻿<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaimuaare OÜ</title>
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
 
-<html lang="en">
-
-  <head>
-
-    <meta charset="utf-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <meta name="description" content="Vaimuaare | homepage">
-
-    <meta name="author" content="Varje Kivila">
-
-    <title>Vaimuaare | Home</title>
-
-    
-    <!-- CDN imports -->
-
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
-    <!-- jQuery UI -->
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-    
-    <!-- Popper -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    
-    <!-- Bootstrap js -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/custom.js"></script>
-    
-    <!-- Custom styles for this template -->
-    <link href="css/custom.css" rel="stylesheet">
-    
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.ico"/>
-    
-    <!-- Stylesheet -->
-    <link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
-
-  </head>
-
-  <body id="page-top">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-      
-      <div class="container menu">
-      
-        <a class="navbar-brand js-scroll-trigger brush-font" href="#page-top">Üles</a>
-      
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menüü
-          <i class="fa fa-bars"></i>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-      
-          <ul class="navbar-nav text-uppercase ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Meist</a>
-            </li>
-      
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Teenused</a>
-            </li>
-      
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#timeline">Ajajoon</a>
-            </li>
-          </ul>
-      
+    <!-- HEADER -->
+    <header>
+        <div class="container header-container">
+            <a href="#top" class="logo">Vaimuaare OÜ</a>
+            <nav>
+                <button onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">Teenused</button>
+                <button onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">Minust</button>
+                <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Võta meiega ühendust</button>
+            </nav>
         </div>
-      </div>
-    
-    </nav>
-
-    <!-- Header -->
-    <header class="masthead">
-    
-      <div class="container">
-    
-        <div class="intro-text">
-    
-          <div class="intro-heading brush-font">Vaimuaare OÜ</div>
-    
-          <div class="intro-lead-in">Korraldame pärimuspulmi, kus armastus saab ajatuks looks.</div>
-          
-          <hr>
-        </div>
-      </div>
     </header>
 
-    <!-- About -->
-    <section id="about">
-      
-      <div class="container">
-      
-        <div class="row">
-      
-          <div class="col-lg-12 text-center">
-      
-            <h2 class="section-heading brush-font">Meist</h2>
-      
-            <p><img class="img_circle" src="triskele.png" alt="Vaimuaare"></p>
-      
-            <h3 class="section-subheading text-muted">
-              <p>Vaimuaare OÜ korraldab pärimuspulmi. 
-              </p>
-            </h3>
-      
-            <hr>
-      
-          </div>
+    <!-- HERO / GALLERY -->
+    <section class="hero" id="top">
+        <div class="hero-text">
+            <h1>Vaimuaare OÜ</h1>
+            <h3>Korraldame pärimuspulmi, kus armastus saab ajatuks looks.</h3>
         </div>
-      
-      </div>
-    
+
+        <div class="gallery">
+            <button class="arrow left" onclick="prevSlide()">&#10094;</button>
+            <div class="slide">
+                <img src="img/gallery/pruutpaar_paikeseloojangus.jpg" alt="Pruutpaar päikeseloojangus">
+                <p class="caption">Pruutpaar päikeseloojangus</p>
+            </div>
+            <div class="slide">
+                <img src="img/gallery/tanutamine.jpg" alt="Tanutamine">
+                <p class="caption">Tanutamine</p>
+            </div>
+            <div class="slide">
+                <img src="img/gallery/polle_lappimine.jpg" alt="Põlle lappimine">
+                <p class="caption">Põlle lappimine</p>
+            </div>
+            <div class="slide">
+                <img src="img/gallery/ringmang.jpg" alt="Ringmäng">
+                <p class="caption">Ringmäng</p>
+            </div>
+            <div class="slide">
+                <img src="img/gallery/pruutpaar_rahvaroivastes.jpg" alt="Pruutpaar rahvarõivastes">
+                <p class="caption">Pruutpaar rahvarõivastes</p>
+            </div>
+            <div class="slide">
+                <img src="img/gallery/kylalised_rahvaroivastes.jpg" alt="Külalised rahvarõivastes">
+                <p class="caption">Külalised rahvarõivastes</p>
+            </div>
+            <button class="arrow right" onclick="nextSlide()">&#10095;</button>
+        </div>
     </section>
 
-    <!-- Portfolio Grid -->
-    
-    <section class="p-0" id="portfolio">
-    
-      <h2 class="section-heading brush-font text-center">Teenused</h2>
-        
-      <h3 class="section-subheading text-muted text-center">Aitame teil korraldada unistuste pulmad algusest lõpuni.</h3>
-      
-      <div class="container-fluid">
-      
-        <div class="row">
-      
-          <div class="col-lg-3 col-sm-6">
-              <li>Pärimuspulmade planeerimine</li>
-          </div>
-      
-          <div class="col-lg-3 col-sm-6">
-              <li>Pulmapäeva logistika</li>
-            
-          </div>
-          
-          <div class="col-lg-3 col-sm-6">
-              <li>Muusika ja meelelahutus</li>
-          </div>
-          
-          <div class="col-lg-3 col-sm-6">
-               <li>Asukoha ja tegijate soovitused</li>
-           </div>
-        
-      </div>
-      
-    </div>
-    
-  </section>
-
-    <!-- Timeline -->
-    <hr>
-    
-    <section id="timeline">
-    
-      <div class="container">
-    
-        <div class="row">
-    
-          <div class="col-lg-12 text-center">
-    
-            <h2 class="section-heading brush-font">Ajajoon</h2>
-    
-            <h3 class="section-subheading text-muted">Vaimuaare OÜ tegevuste ülevaade.</h3>
-    
-          </div>
-    
+    <!-- SERVICES -->
+    <section class="services" id="services">
+        <div class="services-header">
+            <h2>Teenused</h2>
         </div>
-    
-        <div class="row">
-    
-          <div class="col-lg-12">
-    
-            <ul class="timeline">
-    
-              <li class="timeline-inverted">
-    
-                <div class="timeline-panel">
-    
-                  <div class="timeline-heading">
-    
-                    <h4>2023-...</h4>
-    
-                    <h4 class="subheading">Pärimuspulmade korraldamine</a></h4>
-    
-                  </div>
-    
-                  <div class="timeline-body">
-
-                    <p class="text-muted">Vaimuaare OÜ korraldab pärimuspulmi, mis on iga pruutpaari nägu ja tegu.</p>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>2020-2022</h4>
-                    <h4 class="subheading">Käsitöötoodete müük</a></h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Vaimuaare OÜ turustas vaimsete erivajadustega inimeste käsitööd.</p>
-                  </div>
-                </div>
-              </li>
-              
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <h>10. november, 2020</h4>
-                </div>
-              </li>
-
-            </ul>
-          
-          </div>
-        
+        <div class="services-grid">
+            <div class="service-block">
+                <h3>Konsultatsioon</h3>
+                <p>30-minutlises (veebi)kõnes tutvustan teile pärimuspulma üldist olemust, traditsioone ja arutame, kas pärimuspulm võiks sobituda teie pulmaplaanidega.</p>
+                <p class="price">Hind: tasuta</p>
+            </div>
+            <div class="service-block">
+                <h3>Pärimuspulma planeerimine</h3>
+                <p>Aitan teid enne pulmapäeva pulma planeerimisega: valime teile sobivad traditsioonid, aitan muusika, tantsude ja riietuse valikuga. Soovitan tegijaid ja pulmakohti.</p>
+                <p class="price">Hind: alates 500€</p>
+            </div>
+            <div class="service-block">
+                <h3>Pärimuspulma korraldamine</h3>
+                <p>Lisaks pärimuspulma planeerimisele olen olemas pulmapäeval ja suhtlen teie eest tegitajega. Muudan pulma teie jaoks täiesti stressivabaks.</p>
+                <p class="price">Hind: alates 1000€</p>
+            </div>
+            <div class="service-block">
+                <h3>Pärimustantsude õpituba</h3>
+                <p>Tulen teie pulma või muule üritusele ja viin läbi pärimustantsude õpitoa. Muusika tuleb kõlarist või kaasan mõne muusiku (lisatasu eest).</p>
+                <p class="price">Hind: 60€/h</p>
+            </div>
         </div>
-      
-      </div>
-    
     </section>
 
-    <!-- Footer -->
+    <!-- ABOUT -->
+    <section class="about">
+        <div class="about-container">
+            <div class="about-img">
+                <img src="img/varje.jpg" alt="Varje Kivila">
+            </div>
+            <div class="about-text">
+                <h2>Minust</h2>
+                <p>Tere!<br>
+                Mina olen Varje Kivila, Vaimuaare OÜ perenaine.<br><br>
+                Minu pärimuslikke elementidega pulm toimus 2023. aastal ja sellest ajast saati olen soovinud kogetut teistega jagada.<br><br>
+                Kui teidki huvitab pärimus ja selle toomine oma pulmapäeva, siis saan teile abiks olla.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2>Võta meiega ühendust: vaimuaare@gmail.com</h2>
+        <form action="mailto:vaimuaare@gmail.com" method="post" enctype="text/plain">
+            <input type="email" name="email" placeholder="Teie e-mail" required>
+            <textarea name="message" placeholder="Sõnum" required></textarea>
+            <button type="submit">Saada</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <span>Vaimuaare OÜ</span>
-            <br>
-            <span>Registrikood: 16094954</span>
-            <br>
-            <span>E-mail: perenaine@vaimuaare.ee</span>
-            <br>
-            <span>Telefon: +372 53 98 34 34</span>
-            <br>
-            <span>Pank: LHV EE057700771005528298</span>
-            <br>
-            <span>Omanik: Varje Kivila</span>
-            <br>
-            <span class="copyright">&copy; Copyright Vaimuaare OÜ</span>
-          </div>
+        <div class="footer-content">
+            <p>Vaimuaare OÜ</p>
+            <p>Registrikood: 16094954</p>
+            <p>E-mail: vaimuaare@gmail.com</p>
+            <p>Telefon: +372 59 03 96 97</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="mailto:vaimuaare@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
         </div>
-      </div>
     </footer>
 
-  </body>
+<script>
+    // Simple Gallery Script
+    let slideIndex = 0;
+    const slides = document.querySelectorAll('.slide');
+    function showSlide(n) {
+        slides.forEach((s, i) => s.style.display = i === n ? 'block' : 'none');
+    }
+    function nextSlide() { slideIndex = (slideIndex + 1) % slides.length; showSlide(slideIndex);}
+    function prevSlide() { slideIndex = (slideIndex - 1 + slides.length) % slides.length; showSlide(slideIndex);}
+    showSlide(slideIndex);
+</script>
 
+</body>
 </html>
