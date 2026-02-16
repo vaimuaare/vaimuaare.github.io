@@ -27,18 +27,17 @@ To view the website, simply visit [vaimuaare.github.io](https://vaimuaare.github
 ### Running locally
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/vaimuaare/vaimuaare.github.io.git
-   cd vaimuaare.github.io
-   ```
-1. Start a simple local server (Python 3 required):
+```bash
+git clone https://github.com/vaimuaare/vaimuaare.github.io.git
+cd vaimuaare.github.io
+```
 
+2. Start a simple local server (Python 3 required):
 ```bash
 python3 -m http.server 8000
 ```
 
-1. Open your browser:
-
+3. Open your browser:
 ```bash
 http://localhost:8000/
 ```
