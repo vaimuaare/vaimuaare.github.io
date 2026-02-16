@@ -1,163 +1,259 @@
 ﻿<!DOCTYPE html>
 <html lang="et">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vaimuaare OÜ</title>
-    <link rel="stylesheet" href="css/custom.css">
-    <link rel="icon" type="image/png" href="img/favicon.png">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
-</head>
-<body>
-
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- HEADER -->
     <header>
-        <div class="container header-container">
-            <a href="#top" class="logo">Vaimuaare OÜ</a>
-            <button class="menu-toggle" onclick="toggleMenu()">
-                ☰
-            </button>
-            <nav id="nav-menu">
-                <button onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">Teenused</button>
-                <button onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">Minust</button>
-                <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Võta meiega ühendust</button>
-            </nav>
-        </div>
+      <div class="container header-container">
+        <a href="#top" class="logo">Vaimuaare OÜ</a>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <nav id="nav-menu">
+          <button
+            onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})"
+          >
+            Teenused
+          </button>
+          <button
+            onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})"
+          >
+            Minust
+          </button>
+          <button
+            onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})"
+          >
+            Võta meiega ühendust
+          </button>
+        </nav>
+      </div>
     </header>
 
     <!-- HERO / GALLERY -->
     <section class="hero" id="top">
-        <div class="hero-text">
-            <h1>Vaimuaare OÜ</h1>
-            <h3>Korraldame pärimuspulmi, kus armastus saab ajatuks looks.</h3>
-        </div>
+      <div class="hero-text">
+        <h1>Vaimuaare OÜ</h1>
+        <h3>Korraldame pärimuspulmi, kus armastus saab ajatuks looks.</h3>
+      </div>
 
-        <div class="gallery">
-            <button class="arrow left" onclick="prevSlide()">&#10094;</button>
-            <div class="slide">
-                <img src="img/gallery/pruutpaar_paikeseloojangus.jpg" alt="Pruutpaar päikeseloojangus">
-                <p class="caption">Pruutpaar päikeseloojangus</p>
-            </div>
-            <div class="slide">
-                <img src="img/gallery/tanutamine.jpg" alt="Tanutamine">
-                <p class="caption">Tanutamine</p>
-            </div>
-            <div class="slide">
-                <img src="img/gallery/polle_lappimine.jpg" alt="Põlle lappimine">
-                <p class="caption">Põlle lappimine</p>
-            </div>
-            <div class="slide">
-                <img src="img/gallery/ringmang.jpg" alt="Ringmäng">
-                <p class="caption">Ringmäng</p>
-            </div>
-            <div class="slide">
-                <img src="img/gallery/pruutpaar_rahvaroivastes.jpg" alt="Pruutpaar rahvarõivastes">
-                <p class="caption">Pruutpaar rahvarõivastes</p>
-            </div>
-            <div class="slide">
-                <img src="img/gallery/kylalised_rahvaroivastes.jpg" alt="Külalised rahvarõivastes">
-                <p class="caption">Külalised rahvarõivastes</p>
-            </div>
-            <button class="arrow right" onclick="nextSlide()">&#10095;</button>
+      <div class="gallery">
+        <button class="arrow left" onclick="prevSlide()">&#10094;</button>
+        <div class="slide">
+          <img
+            src="img/gallery/pruutpaar_paikeseloojangus.jpg"
+            alt="Pruutpaar päikeseloojangus"
+          />
+          <p class="caption">Pruutpaar päikeseloojangus</p>
         </div>
+        <div class="slide">
+          <img src="img/gallery/tanutamine.jpg" alt="Tanutamine" />
+          <p class="caption">Tanutamine</p>
+        </div>
+        <div class="slide">
+          <img src="img/gallery/polle_lappimine.jpg" alt="Põlle lappimine" />
+          <p class="caption">Põlle lappimine</p>
+        </div>
+        <div class="slide">
+          <img src="img/gallery/ringmang.jpg" alt="Ringmäng" />
+          <p class="caption">Ringmäng</p>
+        </div>
+        <div class="slide">
+          <img
+            src="img/gallery/pruutpaar_rahvaroivastes.jpg"
+            alt="Pruutpaar rahvarõivastes"
+          />
+          <p class="caption">Pruutpaar rahvarõivastes</p>
+        </div>
+        <div class="slide">
+          <img
+            src="img/gallery/kylalised_rahvaroivastes.jpg"
+            alt="Külalised rahvarõivastes"
+          />
+          <p class="caption">Külalised rahvarõivastes</p>
+        </div>
+        <button class="arrow right" onclick="nextSlide()">&#10095;</button>
+      </div>
     </section>
 
     <!-- SERVICES -->
     <section class="services" id="services">
-        <div class="services-header">
-            <h2>Teenused</h2>
+      <div class="services-header">
+        <h2>Teenused</h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-block">
+          <h3>Konsultatsioon</h3>
+          <p>
+            30-minutlises (veebi)kõnes tutvustan teile pärimuspulma üldist
+            olemust, traditsioone ja arutame, kas pärimuspulm võiks sobituda
+            teie pulmaplaanidega.
+          </p>
+          <p class="price">Hind: tasuta</p>
         </div>
-        <div class="services-grid">
-            <div class="service-block">
-                <h3>Konsultatsioon</h3>
-                <p>30-minutlises (veebi)kõnes tutvustan teile pärimuspulma üldist olemust, traditsioone ja arutame, kas pärimuspulm võiks sobituda teie pulmaplaanidega.</p>
-                <p class="price">Hind: tasuta</p>
-            </div>
-            <div class="service-block">
-                <h3>Pärimuspulma planeerimine</h3>
-                <p>Aitan teid enne pulmapäeva pulma planeerimisega: valime teile sobivad traditsioonid, aitan muusika, tantsude ja riietuse valikuga. Soovitan tegijaid ja pulmakohti.</p>
-                <p class="price">Hind: alates 500€</p>
-            </div>
-            <div class="service-block">
-                <h3>Pärimuspulma korraldamine</h3>
-                <p>Lisaks pärimuspulma planeerimisele olen olemas pulmapäeval ja suhtlen teie eest tegitajega. Muudan pulma teie jaoks täiesti stressivabaks.</p>
-                <p class="price">Hind: alates 1000€</p>
-            </div>
-            <div class="service-block">
-                <h3>Pärimustantsude õpituba</h3>
-                <p>Tulen teie pulma või muule üritusele ja viin läbi pärimustantsude õpitoa. Muusika tuleb kõlarist või kaasan mõne muusiku (lisatasu eest).</p>
-                <p class="price">Hind: 60€/h</p>
-            </div>
+        <div class="service-block">
+          <h3>Pärimuspulma planeerimine</h3>
+          <p>
+            Aitan teid enne pulmapäeva pulma planeerimisega: valime teile
+            sobivad traditsioonid, aitan muusika, tantsude ja riietuse valikuga.
+            Soovitan tegijaid ja pulmakohti.
+          </p>
+          <p class="price">Hind: alates 500€</p>
         </div>
+        <div class="service-block">
+          <h3>Pärimuspulma korraldamine</h3>
+          <p>
+            Lisaks pärimuspulma planeerimisele olen olemas pulmapäeval ja
+            suhtlen teie eest tegitajega. Muudan pulma teie jaoks täiesti
+            stressivabaks.
+          </p>
+          <p class="price">Hind: alates 1000€</p>
+        </div>
+        <div class="service-block">
+          <h3>Pärimustantsude õpituba</h3>
+          <p>
+            Tulen teie pulma või muule üritusele ja viin läbi pärimustantsude
+            õpitoa. Muusika tuleb kõlarist või kaasan mõne muusiku (lisatasu
+            eest).
+          </p>
+          <p class="price">Hind: 60€/h</p>
+        </div>
+      </div>
     </section>
 
     <!-- ABOUT -->
     <section class="about" id="about">
-        <div class="about-container">
-            <div class="about-img">
-                <img src="img/varje.jpg" alt="Varje Kivila">
-            </div>
-            <div class="about-text">
-                <h2>Minust</h2>
-                <p>Tere!<br>
-                Mina olen Varje Kivila, Vaimuaare OÜ perenaine.<br><br>
-                Minu pärimuslikke elementidega pulm toimus 2023. aastal ja sellest ajast saati olen soovinud kogetut teistega jagada.<br><br>
-                Kui teidki huvitab pärimus ja selle toomine oma pulmapäeva, siis saan teile abiks olla.
-                </p>
-            </div>
+      <div class="about-container">
+        <div class="about-img">
+          <img src="img/varje.jpg" alt="Varje Kivila" />
         </div>
+        <div class="about-text">
+          <h2>Minust</h2>
+          <p>
+            Tere!<br />
+            Mina olen Varje Kivila, Vaimuaare OÜ perenaine.<br /><br />
+            Minu pärimuslikke elementidega pulm toimus 2023. aastal ja sellest
+            ajast saati olen soovinud kogetut teistega jagada.<br /><br />
+            Kui teidki huvitab pärimus ja selle toomine oma pulmapäeva, siis
+            saan teile abiks olla.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- CONTACT -->
     <section class="contact" id="contact">
       <div class="container">
         <h2>Võta meiega ühendust: vaimuaare@gmail.com</h2>
-        <form action="mailto:vaimuaare@gmail.com" method="post" enctype="text/plain">
-            <input type="email" name="email" placeholder="Teie e-mail" required>
-            <textarea name="message" placeholder="Sõnum" required></textarea>
-            <button type="submit">Saada</button>
+        <form id="contactForm">
+          <p id="formMessage" style="display: none; margin-top: 10px"></p>
+          <input type="email" name="email" placeholder="Teie e-mail" required />
+          <textarea name="message" placeholder="Sõnum" required></textarea>
+          <button type="submit">Saada</button>
         </form>
       </div>
     </section>
 
     <!-- FOOTER -->
     <footer>
-        <div class="footer-content">
-            <p>Vaimuaare OÜ</p>
-            <p>Registrikood: 16094954</p>
-            <p>E-mail: vaimuaare@gmail.com</p>
-            <p>Telefon: +372 59 03 96 97</p>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="mailto:vaimuaare@gmail.com"><i class="fas fa-envelope"></i></a>
-            </div>
+      <div class="footer-content">
+        <p>Vaimuaare OÜ</p>
+        <p>Registrikood: 16094954</p>
+        <p>E-mail: vaimuaare@gmail.com</p>
+        <p>Telefon: +372 59 03 96 97</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/vaimuaare"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://www.instagram.com/vaimuaare/"
+            ><i class="fab fa-instagram"></i
+          ></a>
         </div>
+      </div>
     </footer>
 
-<script>
-    // Mobile menu toggle
-    function toggleMenu() {
-        const menu = document.getElementById("nav-menu");
-        menu.classList.toggle("active");
-    }
+    <script>
+      // Mobile menu toggle
+      function toggleMenu() {
+        const menu = document.getElementById('nav-menu');
+        menu.classList.toggle('active');
+      }
 
-    function scrollToSection(id) {
+      function scrollToSection(id) {
         document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-        document.getElementById("nav-menu").classList.remove("active");
-    }
+        document.getElementById('nav-menu').classList.remove('active');
+      }
 
-    // Simple Gallery Script
-    let slideIndex = 0;
-    const slides = document.querySelectorAll('.slide');
-    function showSlide(n) {
-        slides.forEach((s, i) => s.style.display = i === n ? 'block' : 'none');
-    }
-    function nextSlide() { slideIndex = (slideIndex + 1) % slides.length; showSlide(slideIndex);}
-    function prevSlide() { slideIndex = (slideIndex - 1 + slides.length) % slides.length; showSlide(slideIndex);}
-    showSlide(slideIndex);
-</script>
+      // Simple Gallery Script
+      let slideIndex = 0;
+      const slides = document.querySelectorAll('.slide');
+      function showSlide(n) {
+        slides.forEach(
+          (s, i) => (s.style.display = i === n ? 'block' : 'none')
+        );
+      }
+      function nextSlide() {
+        slideIndex = (slideIndex + 1) % slides.length;
+        showSlide(slideIndex);
+      }
+      function prevSlide() {
+        slideIndex = (slideIndex - 1 + slides.length) % slides.length;
+        showSlide(slideIndex);
+      }
+      showSlide(slideIndex);
 
-</body>
+      //submit contact form
+      const form = document.getElementById('contactForm');
+      const submitButton = form.querySelector('button');
+      const messageEl = document.getElementById('formMessage');
+
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        // Disable button and show sending message
+        submitButton.disabled = true;
+        submitButton.textContent = 'Saadan...';
+        messageEl.style.display = 'block';
+        messageEl.textContent = 'Saadan sõnumit, palun oota...';
+
+        const formData = new FormData(form);
+        const params = new URLSearchParams(formData);
+
+        try {
+          const response = await fetch(
+            'https://script.google.com/macros/s/AKfycbxRM7px4if6TRj4LMmDnrRtmzNys4LI2OYdfH1J3aSQrML3v1Ai-xKF9YfrXH3PSfYH/exec',
+            {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+              body: params,
+            }
+          );
+          const result = await response.json();
+
+          if (result.result === 'success') {
+            messageEl.textContent = 'Sõnum edukalt saadetud!';
+            form.reset();
+          } else {
+            messageEl.textContent = 'Viga: ' + result.error;
+          }
+        } catch (err) {
+          messageEl.textContent = 'Viga: ' + err.message;
+        } finally {
+          submitButton.disabled = false;
+          submitButton.textContent = 'Saada';
+        }
+      });
+    </script>
+  </body>
 </html>
